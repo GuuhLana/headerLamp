@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding:  0;
+    font-family: 'poppins ', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero{
+    background: #1d2026;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+} 
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+nav .menu-img{
+    width: 25px;
+    margin-right: 20px ;
+    cursor: pointer;
+}
+
+nav .logo{
+    width: 160px;
+    cursor: pointer;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    transition-duration: 0.7s;
+}
+
+nav ul li a:hover{
+    color: #00986f;
+    font-size: 18px;
+    transition: all 0.5s ease-in-out;
+    transition-duration: 0.7s;
+}
+
+button{
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+button span{
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: background 0.5s, margin-left 0.5s;
+}
+
+.container-lampada{
+    position: absolute;
+    top: -20px;
+    left: 22%;
+    width: 200px;
+}
+
+.lampada{
+    width: 100%;
+}
+
+.luz{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    margin-left: -10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.texto-conteiner{
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+
+.texto-conteiner h1{
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.texto-conteiner p{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
+
+.texto-conteiner a{
+    text-decoration: none;
+    background: #00986f;
+    padding: 14px 40px;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 30px;
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+    transition-duration: 0.7s;
+}
+
+.texto-conteiner a:hover{
+    color: #1d2026;
+    transition: all 0.5s ease-in-out;
+    transition-duration: 0.7s;
+}
+
+
+.active{
+    background: #00986f;
+}
+
+.active span{
+    background: #fff;
+    margin-left: 31px;
+}
+
+.ligada{
+    opacity: 1;
+}

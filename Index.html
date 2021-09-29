@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Header Design</title>
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/menu.png" alt="menu-image" class="menu-img">
+            <img src="images/GUSTAVO LANA.png" alt="logo-menu" class="logo">
+            <ul>
+                <li><a href="https://github.com/GuuhLana"class="nav-itens">Home</a></li>
+                <li><a href="https://github.com/GuuhLana"class="nav-itens">Sobre nós</a></li>
+                <li><a href="https://github.com/GuuhLana"class="nav-itens">Blog</a></li>
+                <li><a href="https://github.com/GuuhLana"class="nav-itens">Contato</a></li>
+            </ul>
+            <button type="button" onclick="ligarBtn()" id="btn"><span></span></button>
+        </nav>
+
+        <div class="container-lampada">
+            <img src="images/lamp.png" alt="imagem-lampada" class="lampada">
+            <img src="images/light.png" alt="imagem-luz" class="luz" id="luz">
+        </div>
+
+        <div class= "texto-conteiner">
+            <h1>Olá eu sou o Gustavo</h1>
+            <p>Este é um design para headers que desenvolvi, usando somente HTML, CSS, e Javascript</p>
+            <a href="https://github.com/GuuhLana">De uma olhada no meu Github para ver +</a>
+        </div>
+
+
+    </div>
+    
+
+
+    <script>
+        var btn = document.getElementById("btn");
+        var luz = document.getElementById("luz");
+
+        function ligarBtn(){
+            btn.classList.toggle("active")
+            luz.classList.toggle("ligada")
+        }
+    </script>
+</body>
+</html>
